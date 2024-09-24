@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #EEEEEE;
+    --foreground: black;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+}
+
+.current-previous-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0; 
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal; 
+  font-family: "mr-eaves-modern", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.subtitle{
+  color: #8f8787
+}
+
+.about-section-title {
+  font-size: 1rem;
+  font-weight: semi-bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.previously-done-list {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.links-list {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.links-title {
+  font-size: 1rem;
+  font-weight: semi-bold;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #8f8787;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ffe9e3;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
