@@ -56,9 +56,7 @@ export default function Home() {
             <ul className="links-list">
               <li><a href="https://read.cv/jungyoonlim">CV</a></li>
               <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
-              <li><a href="https://jungyoonlim-fineart.vercel.app/">Artwork</a></li>
-              <li><a href="/essays">Essays</a></li>
-              <li><a href="/books">Books</a></li>
+              <li><a href="https://jungyoonlim-fineart.vercel.app/">Art</a></li>
             </ul>
           </div>
         </div>
