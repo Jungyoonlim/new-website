@@ -5,7 +5,39 @@ import { motion } from "framer-motion";
 /**
  * 
  * 
- *         <div className="section">
+ *       
+ */
+
+
+export default function Home() {
+  return (
+    <div className="container">
+      <motion.div
+      initial={{ opacity: 0, y: 20}}
+      animate = {{ opacity: 1, y:0 }}
+      transition={{ duration: 1}}
+    >
+      <header>
+        <h1>Jungyoon Lim</h1>
+        <p className="subtitle">Designer, Design Engineer</p>
+      </header>
+
+      <main>
+        <div className="section">
+          <div className="about-section-title">About</div>
+          <p>Hi, my name is Jungyoon Lim, Joanne. I am a design engineer. </p>
+          <div className="section-content">
+            <p className="current-previous-title">Currently</p>
+            <p>Design, Human-Computer Interface, and AI</p>
+            <p className="current-previous-title">Previously</p>
+            <ul className="previously-done-list">
+                <li>Design Engineer @ <a href="https://highlightai.com/" target="_blank" rel="noopener noreferrer">Highlight</a></li>
+                <li>Applied Math and Philosophy at Brown University</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
           <div className="section-title">Projects</div>
           <div className="section-content">
             <ul className="projects-list">
@@ -23,37 +55,6 @@ import { motion } from "framer-motion";
               </li>
             </ul>
           </div>  
-        </div>
- */
-
-
-export default function Home() {
-  return (
-    <div className="container">
-      <motion.div
-      initial={{ opacity: 0, y: 20}}
-      animate = {{ opacity: 1, y:0 }}
-      transition={{ duration: 1}}
-    >
-      <header>
-        <h1>Jungyoon Lim</h1>
-        <p className="subtitle">Designer, Design Engineer</p>
-        <p className="byline">Seoul, Korea</p>
-      </header>
-
-      <main>
-        <div className="section">
-          <div className="about-section-title">About</div>
-          <p>Hi, my name is Jungyoon Lim, Joanne. I am a design engineer. </p>
-          <div className="section-content">
-            <p className="current-previous-title">Currently</p>
-            <p>Design, Human-Computer Interface, and AI</p>
-            <p className="current-previous-title">Previously</p>
-            <ul className="previously-done-list">
-                <li>- Design Engineer @ <a href="https://highlightai.com/" target="_blank" rel="noopener noreferrer">Highlight</a></li>
-                <li>- Applied Math and Philosophy at Brown University</li>
-            </ul>
-          </div>
         </div>
 
         <div className="section">
