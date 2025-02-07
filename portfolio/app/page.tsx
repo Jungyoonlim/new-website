@@ -38,26 +38,6 @@ export default function Home() {
         </div>
 
         <div className="section">
-          <div className="section-title">Projects</div>
-          <div className="section-content">
-            <ul className="projects-list">
-              <li>
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-              </li>
-              <li>
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-              </li>
-              <li>
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
-              </li>
-            </ul>
-          </div>  
-        </div>
-
-        <div className="section">
           <div className="links-title">Links</div>
           <div className="section-content">
             <ul className="links-list">
