@@ -26,9 +26,6 @@ export default function Home() {
             <ul className="previously-done-list">
                 <li>- Design Engineer @ <a href="https://highlightai.com/" target="_blank" rel="noopener noreferrer">Highlight</a></li>
                 <li>- Applied Math and Philosophy at Brown University</li>
-                <li>- Ancient Greek and Latin</li>
-                <li>- Lived in Italy for a year</li>
-                <li>- Fine Art</li>
             </ul>
           </div>
         </div>
@@ -70,13 +67,6 @@ export default function Home() {
           <div className="section-title">Contact</div>
           <div className="section-content">
             <p>You can reach me via <a href="https://twitter.com/jungyoonlim">Twitter</a> or <a href="https://www.linkedin.com/in/jungyoonlim/">LinkedIn</a>.</p>
-            <p>Location: <a 
-              href="https://www.google.com/maps/search/?api=1&query=YOUR_ADDRESS_HERE" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              Your Address Here
-            </a></p>
           </div>
         </div>
       </main>
