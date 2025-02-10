@@ -1,13 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion"; 
-import { useTheme } from '@/components/providers/theme-provider'
 import { ThemeToggle } from '@/components/providers/theme-toggle'
 
 
 export default function Home() {
-  const { theme } = useTheme()
-
   return (
     <div className="container">
       <motion.div

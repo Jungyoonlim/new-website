@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useTheme } from '@/components/providers/theme-provider'
 
 export function ThemeToggle() {
-    const { theme, toggleTheme, themes } = useTheme()
+    const { toggleTheme } = useTheme()
 
     return (
         <motion.button
