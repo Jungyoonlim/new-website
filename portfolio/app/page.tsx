@@ -1,24 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion"; 
-
-/**
- * 
- * 
- *       
- */
+import { useTheme } from '@/components/providers/theme-provider'
+import { ThemeToggle } from '@/components/providers/theme-toggle'
 
 
 export default function Home() {
+  const { theme } = useTheme()
+
   return (
     <div className="container">
       <motion.div
       initial={{ opacity: 0, y: 20}}
-      animate = {{ opacity: 1, y:0 }}
+      animate = {{ opacity: 1, y: 0 }}
       transition={{ duration: 1}}
     >
       <header>
-        <h1>Jungyoon Lim</h1>
+        <h1 style={{ color: `rgb(var(--primary))`}}>
+        Jungyoon Lim
+        </h1>
         <p className="subtitle">Design Engineer</p>
       </header>
 
@@ -56,6 +56,7 @@ export default function Home() {
         </div>
       </main>
     </motion.div>
+    <ThemeToggle />
     </div>
   );
 }

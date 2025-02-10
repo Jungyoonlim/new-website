@@ -6,6 +6,7 @@ import { Theme, themes } from '@/config/theme'
 type ThemeContextType = { 
     theme: Theme 
     toggleTheme: () => void
+    themes: readonly Theme[]
 }
 
 const ThemeContext = createContext<ThemeContextType | null>(null)
@@ -37,7 +38,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }){
     }
     
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme, themes: Object.keys(themes) as Theme[] }}>
           {children}
         </ThemeContext.Provider>
       )
