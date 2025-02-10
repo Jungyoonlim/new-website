@@ -19,7 +19,7 @@ export default function Home() {
     >
       <header>
         <h1>Jungyoon Lim</h1>
-        <p className="subtitle">Designer, Design Engineer</p>
+        <p className="subtitle">Design Engineer</p>
       </header>
 
       <main>
@@ -28,7 +28,7 @@ export default function Home() {
           <p>Hi, my name is Jungyoon Lim, Joanne. I am a design engineer. </p>
           <div className="section-content">
             <p className="current-previous-title">Currently</p>
-            <p>Design, Human-Computer Interface, and AI</p>
+            <p>Design and Human-Computer Interface</p>
             <p className="current-previous-title">Previously</p>
             <ul className="previously-done-list">
                 <li>Design Engineer @ <a href="https://highlightai.com/" target="_blank" rel="noopener noreferrer">Highlight</a></li>
