@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"; 
 import { ThemeToggle } from '@/components/providers/theme-toggle'
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,6 +33,10 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        
+        <div className="section">
+          
+        </div>
 
         <div className="section">
           <div className="links-title">Links</div>
@@ -40,6 +44,10 @@ export default function Home() {
             <ul className="links-list">
               <li><a href="https://read.cv/jungyoonlim">CV</a></li>
               <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
+              <li>
+                <Link
+                  href="/portfolio"
+                >Portfolio</Link></li>
               <li><a href="https://jungyoonlim-fineart.vercel.app/">Art</a></li>
             </ul>
           </div>
